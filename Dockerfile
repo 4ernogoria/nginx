@@ -22,6 +22,6 @@ RUN yum -y install --setopt=tsflags=nodocs epel-release && \
 COPY passenger.conf /etc/nginx/conf.d/
 COPY nginx.conf /etc/nginx/
 
-EXPOSE 80, 29876 
+EXPOSE 80 29876 
 
 ENTRYPOINT ["/entrypoint.sh"]
