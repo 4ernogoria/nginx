@@ -9,7 +9,7 @@ RUN yum -y install --setopt=tsflags=nodocs epel-release && \
                                            rubygem-rack \
                                            memcached && \
     yum clean all && \
-    yum-config-manager --disable epel && \STOPSIGNAL SIGTERM
+    yum-config-manager --disable epel && \
     yum -y install --setopt=tsflags=nodocs passenger \
                                            nginx && \
     yum -y update && yum clean all && \
