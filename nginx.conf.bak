@@ -1,4 +1,4 @@
-user oneadmin;
+user nginx;
 worker_processes 10;
 daemon off;
 error_log /var/log/one/ngerror.log;
@@ -22,7 +22,7 @@ http {
     include             /etc/nginx/conf.d/*.conf;
     default_type        application/octet-stream;
     server {    
-        listen       127.0.0.1:8080;
+        listen       127.0.0.1:80;
         server_name  localhost;
         root         /usr/share/nginx/html;
         include /etc/nginx/default.d/*.conf;
